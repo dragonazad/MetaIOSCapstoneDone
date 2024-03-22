@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		70AFE8582BADF631008469EC /* LittleLemonCapStoneProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8572BADF631008469EC /* LittleLemonCapStoneProjectApp.swift */; };
-		70AFE85A2BADF631008469EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8592BADF631008469EC /* ContentView.swift */; };
 		70AFE85C2BADF634008469EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AFE85B2BADF634008469EC /* Assets.xcassets */; };
 		70AFE85F2BADF634008469EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AFE85E2BADF634008469EC /* Preview Assets.xcassets */; };
 		70AFE8612BADF634008469EC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8602BADF634008469EC /* Persistence.swift */; };
@@ -25,6 +24,11 @@
 		70AFE8962BADFA71008469EC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8952BADFA71008469EC /* UserProfile.swift */; };
 		70AFE8982BADFA9F008469EC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8972BADFA9F008469EC /* Styles.swift */; };
 		70AFE89A2BADFAD2008469EC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8992BADFAD2008469EC /* ViewModel.swift */; };
+		70AFE89C2BADFD45008469EC /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE89B2BADFD45008469EC /* FoodItem.swift */; };
+		70AFE89F2BADFDB6008469EC /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE89E2BADFDB6008469EC /* MenuItem.swift */; };
+		70AFE8A12BADFDCC008469EC /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8A02BADFDCC008469EC /* MenuList.swift */; };
+		70AFE8A32BADFE0D008469EC /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8A22BADFE0D008469EC /* DetailItem.swift */; };
+		70AFE8A52BADFF5B008469EC /* CoreDataFetchedObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8A42BADFF5B008469EC /* CoreDataFetchedObjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +51,6 @@
 /* Begin PBXFileReference section */
 		70AFE8542BADF631008469EC /* LittleLemonCapStoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleLemonCapStoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFE8572BADF631008469EC /* LittleLemonCapStoneProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonCapStoneProjectApp.swift; sourceTree = "<group>"; };
-		70AFE8592BADF631008469EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		70AFE85B2BADF634008469EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70AFE85E2BADF634008469EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70AFE8602BADF634008469EC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -66,6 +69,11 @@
 		70AFE8952BADFA71008469EC /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		70AFE8972BADFA9F008469EC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		70AFE8992BADFAD2008469EC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		70AFE89B2BADFD45008469EC /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		70AFE89E2BADFDB6008469EC /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		70AFE8A02BADFDCC008469EC /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		70AFE8A22BADFE0D008469EC /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
+		70AFE8A42BADFF5B008469EC /* CoreDataFetchedObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFetchedObjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,11 +124,11 @@
 		70AFE8562BADF631008469EC /* LittleLemonCapStoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				70AFE8A62BADFF83008469EC /* Controllers */,
+				70AFE89D2BADFD9A008469EC /* Models */,
 				70AFE8862BADF790008469EC /* Views */,
 				70AFE8572BADF631008469EC /* LittleLemonCapStoneProjectApp.swift */,
-				70AFE8592BADF631008469EC /* ContentView.swift */,
 				70AFE85B2BADF634008469EC /* Assets.xcassets */,
-				70AFE8602BADF634008469EC /* Persistence.swift */,
 				70AFE8622BADF634008469EC /* LittleLemonCapStoneProject.xcdatamodeld */,
 				70AFE85D2BADF634008469EC /* Preview Content */,
 			);
@@ -161,11 +169,31 @@
 				70AFE88F2BADF95E008469EC /* Home.swift */,
 				70AFE8912BADF9BB008469EC /* MainScreen.swift */,
 				70AFE8932BADFA19008469EC /* Menu.swift */,
+				70AFE89B2BADFD45008469EC /* FoodItem.swift */,
 				70AFE8952BADFA71008469EC /* UserProfile.swift */,
 				70AFE8972BADFA9F008469EC /* Styles.swift */,
 				70AFE8992BADFAD2008469EC /* ViewModel.swift */,
+				70AFE8A22BADFE0D008469EC /* DetailItem.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		70AFE89D2BADFD9A008469EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				70AFE89E2BADFDB6008469EC /* MenuItem.swift */,
+				70AFE8A02BADFDCC008469EC /* MenuList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		70AFE8A62BADFF83008469EC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70AFE8602BADF634008469EC /* Persistence.swift */,
+				70AFE8A42BADFF5B008469EC /* CoreDataFetchedObjects.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AFE89C2BADFD45008469EC /* FoodItem.swift in Sources */,
 				70AFE8642BADF634008469EC /* LittleLemonCapStoneProject.xcdatamodeld in Sources */,
 				70AFE8612BADF634008469EC /* Persistence.swift in Sources */,
 				70AFE8922BADF9BB008469EC /* MainScreen.swift in Sources */,
@@ -306,9 +335,12 @@
 				70AFE88C2BADF88D008469EC /* Header.swift in Sources */,
 				70AFE89A2BADFAD2008469EC /* ViewModel.swift in Sources */,
 				70AFE8962BADFA71008469EC /* UserProfile.swift in Sources */,
+				70AFE89F2BADFDB6008469EC /* MenuItem.swift in Sources */,
+				70AFE8A32BADFE0D008469EC /* DetailItem.swift in Sources */,
+				70AFE8A12BADFDCC008469EC /* MenuList.swift in Sources */,
 				70AFE8942BADFA19008469EC /* Menu.swift in Sources */,
 				70AFE8902BADF95E008469EC /* Home.swift in Sources */,
-				70AFE85A2BADF631008469EC /* ContentView.swift in Sources */,
+				70AFE8A52BADFF5B008469EC /* CoreDataFetchedObjects.swift in Sources */,
 				70AFE8582BADF631008469EC /* LittleLemonCapStoneProjectApp.swift in Sources */,
 				70AFE88A2BADF87C008469EC /* Hero.swift in Sources */,
 			);

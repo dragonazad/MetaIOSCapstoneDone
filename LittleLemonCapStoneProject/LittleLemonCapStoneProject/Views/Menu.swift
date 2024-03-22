@@ -1,6 +1,6 @@
 //
-//  Menu.swift
-//  LittleLemonCapStoneProject
+//  MenuView.swift
+//  LittleLemon
 //
 //  Created by Muhammad Ali on 22/03/2024.
 //
@@ -60,11 +60,21 @@ struct Menu: View {
                     .toggleStyle(MyToggleStyle())
                     .padding(.horizontal)
                 }
+                FetchedObjects(predicate: buildPredicate(),
+                               sortDescriptors: buildSortDescriptors()) {
+                    (dishes: [Dish]) in
+                    List(dishes) { dish in
+                        NavigationLink(destination: DetailItem(dish: dish)) {
+                            FoodItem(dish: dish)
+                        }
+                    }
+                    .listStyle(.plain)
+                }
             }
         }
         .onAppear {
             if !loaded {
-               
+                MenuList.getMenuData(viewContext: viewContext)
                 loaded = true
             }
         }
@@ -80,7 +90,24 @@ struct Menu: View {
             }
         }
     }
-   
+    
+    func buildSortDescriptors() -> [NSSortDescriptor] {
+        return [NSSortDescriptor(key: "title",
+                                  ascending: true,
+                                  selector:
+                                    #selector(NSString.localizedStandardCompare))]
+    }
+    
+    func buildPredicate() -> NSCompoundPredicate {
+        let search = searchText == "" ? NSPredicate(value: true) : NSPredicate(format: "title CONTAINS[cd] %@", searchText)
+        let starters = !startersIsEnabled ? NSPredicate(format: "category != %@", "starters") : NSPredicate(value: true)
+        let mains = !mainsIsEnabled ? NSPredicate(format: "category != %@", "mains") : NSPredicate(value: true)
+        let desserts = !dessertsIsEnabled ? NSPredicate(format: "category != %@", "desserts") : NSPredicate(value: true)
+        let drinks = !drinksIsEnabled ? NSPredicate(format: "category != %@", "drinks") : NSPredicate(value: true)
+
+        let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [search, starters, mains, desserts, drinks])
+        return compoundPredicate
+    }
 }
 
 struct Menu_Previews: PreviewProvider {
