@@ -16,6 +16,15 @@
 		70AFE86E2BADF635008469EC /* LittleLemonCapStoneProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE86D2BADF635008469EC /* LittleLemonCapStoneProjectTests.swift */; };
 		70AFE8782BADF635008469EC /* LittleLemonCapStoneProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8772BADF635008469EC /* LittleLemonCapStoneProjectUITests.swift */; };
 		70AFE87A2BADF635008469EC /* LittleLemonCapStoneProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8792BADF635008469EC /* LittleLemonCapStoneProjectUITestsLaunchTests.swift */; };
+		70AFE8882BADF7C0008469EC /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8872BADF7C0008469EC /* Onboarding.swift */; };
+		70AFE88A2BADF87C008469EC /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8892BADF87C008469EC /* Hero.swift */; };
+		70AFE88C2BADF88D008469EC /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE88B2BADF88D008469EC /* Header.swift */; };
+		70AFE8902BADF95E008469EC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE88F2BADF95E008469EC /* Home.swift */; };
+		70AFE8922BADF9BB008469EC /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8912BADF9BB008469EC /* MainScreen.swift */; };
+		70AFE8942BADFA19008469EC /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8932BADFA19008469EC /* Menu.swift */; };
+		70AFE8962BADFA71008469EC /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8952BADFA71008469EC /* UserProfile.swift */; };
+		70AFE8982BADFA9F008469EC /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8972BADFA9F008469EC /* Styles.swift */; };
+		70AFE89A2BADFAD2008469EC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AFE8992BADFAD2008469EC /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,15 @@
 		70AFE8732BADF635008469EC /* LittleLemonCapStoneProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LittleLemonCapStoneProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFE8772BADF635008469EC /* LittleLemonCapStoneProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonCapStoneProjectUITests.swift; sourceTree = "<group>"; };
 		70AFE8792BADF635008469EC /* LittleLemonCapStoneProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LittleLemonCapStoneProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70AFE8872BADF7C0008469EC /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		70AFE8892BADF87C008469EC /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		70AFE88B2BADF88D008469EC /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		70AFE88F2BADF95E008469EC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		70AFE8912BADF9BB008469EC /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		70AFE8932BADFA19008469EC /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		70AFE8952BADFA71008469EC /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		70AFE8972BADFA9F008469EC /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		70AFE8992BADFAD2008469EC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +116,7 @@
 		70AFE8562BADF631008469EC /* LittleLemonCapStoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				70AFE8862BADF790008469EC /* Views */,
 				70AFE8572BADF631008469EC /* LittleLemonCapStoneProjectApp.swift */,
 				70AFE8592BADF631008469EC /* ContentView.swift */,
 				70AFE85B2BADF634008469EC /* Assets.xcassets */,
@@ -131,6 +150,22 @@
 				70AFE8792BADF635008469EC /* LittleLemonCapStoneProjectUITestsLaunchTests.swift */,
 			);
 			path = LittleLemonCapStoneProjectUITests;
+			sourceTree = "<group>";
+		};
+		70AFE8862BADF790008469EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70AFE8872BADF7C0008469EC /* Onboarding.swift */,
+				70AFE8892BADF87C008469EC /* Hero.swift */,
+				70AFE88B2BADF88D008469EC /* Header.swift */,
+				70AFE88F2BADF95E008469EC /* Home.swift */,
+				70AFE8912BADF9BB008469EC /* MainScreen.swift */,
+				70AFE8932BADFA19008469EC /* Menu.swift */,
+				70AFE8952BADFA71008469EC /* UserProfile.swift */,
+				70AFE8972BADFA9F008469EC /* Styles.swift */,
+				70AFE8992BADFAD2008469EC /* ViewModel.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +300,17 @@
 			files = (
 				70AFE8642BADF634008469EC /* LittleLemonCapStoneProject.xcdatamodeld in Sources */,
 				70AFE8612BADF634008469EC /* Persistence.swift in Sources */,
+				70AFE8922BADF9BB008469EC /* MainScreen.swift in Sources */,
+				70AFE8982BADFA9F008469EC /* Styles.swift in Sources */,
+				70AFE8882BADF7C0008469EC /* Onboarding.swift in Sources */,
+				70AFE88C2BADF88D008469EC /* Header.swift in Sources */,
+				70AFE89A2BADFAD2008469EC /* ViewModel.swift in Sources */,
+				70AFE8962BADFA71008469EC /* UserProfile.swift in Sources */,
+				70AFE8942BADFA19008469EC /* Menu.swift in Sources */,
+				70AFE8902BADF95E008469EC /* Home.swift in Sources */,
 				70AFE85A2BADF631008469EC /* ContentView.swift in Sources */,
 				70AFE8582BADF631008469EC /* LittleLemonCapStoneProjectApp.swift in Sources */,
+				70AFE88A2BADF87C008469EC /* Hero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
